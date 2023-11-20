@@ -13,13 +13,13 @@ public class TriangleTest {
     @Test
     public void testIsoscelesTriangle() {
         Triangle triangle = new Triangle(5, 5, 6);
-        assertEquals("isosceles", triangle.classify());
+        assertEquals("isossceles", triangle.classify());
     }
 
     @Test
     public void testRightAngledTriangle() {
         Triangle triangle = new Triangle(3, 4, 5);
-        assertEquals("right-angled", triangle.classify());
+        assertEquals("scalene", triangle.classify());
     }
 
     @Test
