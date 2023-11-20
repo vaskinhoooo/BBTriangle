@@ -28,3 +28,12 @@ test{
         events("passed", "skipped", "failed")
     }
 }
+
+task generateJavadoc(type: Javadoc) {
+    source = sourceSets.main.allJava  
+    destinationDir = file("$buildDir/docs/javadoc") 
+
+}
+
+
+compileJava.dependsOn generateJavadoc
