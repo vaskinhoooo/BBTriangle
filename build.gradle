@@ -6,6 +6,7 @@
  */
 plugins{
     id('java')
+    id'application'
 }
 
 group 'JUnitProject'
@@ -15,6 +16,10 @@ sourceCompatibility = 1.8
 
 repositories{
     mavenCentral()
+}
+
+application {
+    mainClassName = "triangle.main"
 }
 
 dependencies {
